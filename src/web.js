@@ -1,9 +1,5 @@
-let docTitle = document.title;
-const order = document.querySelectorAll(".order");
+var loader = document.getElementById("preloader");
 
-window.addEventListener("blur", () => {
-  document.title = "Come back :(";
-});
-window.addEventListener("focus", () => {
-  document.title = docTitle;
+window.addEventListener("load", function () {
+  loader.style.display = "none";
 });
